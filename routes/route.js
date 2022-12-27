@@ -8,7 +8,7 @@ const router=express.Router()
 
 router.post('/senddata', sendData);
 router.post('/add',addUser)
-router.get('/all',getUsers)
+router.get('all',getUsers)
 router.get('/:id',getUser)
 router.post('/:id',editUser)
 router.delete('/:id',deleteUser)

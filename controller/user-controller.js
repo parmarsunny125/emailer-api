@@ -56,3 +56,10 @@ export const deleteUser = async(request,response)=>{
         response.status(409).json("cannot delete")
     }
 }
+export const home = async(req,res)=>{
+   try{
+        <div>This is home</div>
+    }catch(error){
+        response.status(409).json("cannot delete")
+    }
+}

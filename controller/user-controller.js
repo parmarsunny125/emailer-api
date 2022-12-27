@@ -1,7 +1,15 @@
 import User from '../schema/user-schema.js'
 
 
-
+export const getUsers=async(request,response)=>{
+    try{
+        const users=await User.find({})
+        response.status(201).json(users)
+    }
+    catch(error){
+        response.status(404).json({message:error.message})
+    }
+}
 export const addUser=async(request,response)=>{
     const user=request.body;
 

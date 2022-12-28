@@ -6,12 +6,12 @@ import {addUser,getUsers,getUser,editUser,deleteUser} from '../controller/user-c
 const router=express.Router()
 
 
-router.post('/senddata', sendData);
-router.post('/add',addUser)
-router.get('/',getUsers)
-router.get('/:id',getUser)
-router.post('/:id',editUser)
-router.delete('/:id',deleteUser)
+router.post('https://emailer-api.onrender.com/senddata', sendData);
+router.post('https://emailer-api.onrender.com/add',addUser)
+router.get('https://emailer-api.onrender.com/',getUsers)
+router.get('https://emailer-api.onrender.com/:id',getUser)
+router.post('https://emailer-api.onrender.com/:id',editUser)
+router.delete('https://emailer-api.onrender.com/:id',deleteUser)
 
   
 

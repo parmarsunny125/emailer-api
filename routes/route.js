@@ -5,10 +5,10 @@ import {addUser,getUsers,getUser,editUser,deleteUser} from '../controller/user-c
 
 const router=express.Router()
 
-
+router.get('/',getUsers)
 router.post('/senddata', sendData);
 router.post('/add',addUser)
-router.get('/',getUsers)
+
 router.get('/:id',getUser)
 router.post('/:id',editUser)
 router.delete('/:id',deleteUser)
